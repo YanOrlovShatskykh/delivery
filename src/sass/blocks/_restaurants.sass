@@ -1,0 +1,107 @@
+.restaurants
+  &__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    margin-bottom: 45px
+  &__title
+    margin: 0
+
+    font-size: 36px
+    line-height: 42px
+    font-weight: bold
+    color: #000000
+  &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding-bottom: 90px
+    &__card
+      display: flex
+      flex-direction: column
+      width: 384px
+      margin-bottom: 30px
+
+      background: $color-white
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05)
+      border-radius: 7px
+    &__img
+      width: 384px
+      height: 250px
+
+      object-fit: cover
+      border-top-left-radius: 7px
+      border-top-right-radius: 7px
+    &__text
+      padding: 20px 24px 35px
+    &__heading
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__title
+      margin: 0
+      margin-bottom: 10px
+      font-size: 24px
+      line-height: 32px
+      font-weight: bold
+      color: #000000
+    &__tag
+      display: inline-block
+      padding: 1px 8px
+
+      font-size: 12px
+      line-height: 20px
+      color: $color-white
+
+      background-color: $color-restaurants-tag
+      border-radius: 2px
+    &__info
+      display: flex
+      align-items: center
+    &__rating
+      margin-right: 26px
+      padding-left: 22px
+
+      font-size: 18px
+      line-height: 32px
+      font-weight: bold
+      color: $color-restaurants-rating
+
+      background-image: url("../img/restaurants/start-icon.svg")
+      background-repeat: no-repeat
+      background-position: left top 6px
+    &__price,
+    &__category
+      font-size: 18px;
+      line-height: 32px;
+      color: $color-restaurants-price-category
+    &__price
+      margin-right: 10px
+    &__category
+      display: flex
+      align-items: center
+      position: relative
+      padding-left: 15px
+      &::before
+        content: ""
+
+        position: absolute
+        left: 0
+
+        width: 5px
+        height: 5px
+
+        background-color: $color-restaurants-price-category
+
+        border-radius: 50%
+
+
+
+
+
+    
+.input-search
+  width: 300px
+
+  background-image: url("../img/restaurants/search-icon.svg")

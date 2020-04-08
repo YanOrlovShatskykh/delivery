@@ -2,24 +2,27 @@
   display: flex
   align-items: center
   justify-content: space-between
+
+  margin-bottom: 40px
 .input
   padding-left: 32px
+  padding-top: 8px
+  padding-bottom: 8px
 
   font-size: 14px
   line-height: 24px
 
   background: $color-white
+  background-repeat: no-repeat
+  background-position: 10px center
   border: 1px solid $color-input-border
   border-radius: 2px
   &::placeholder
     color: $color-input-placeholder
-.search-input
-  width: 640px
-  height: 40px
+  &-address
+    width: 640px
 
-  background-image: url(../img/header/home.svg)
-  background-repeat: no-repeat
-  background-position: 10px center      
+    background-image: url(../img/header/home.svg)      
 .buttons
   display: flex
 .button
@@ -46,6 +49,6 @@
   border: 1px solid $color-blue
 .button-icon
   margin-right: 3 px
-  margin-top: -2px
+  margin-top: -1px
 .button-text
   // vertical-align: middle
