@@ -20,19 +20,19 @@
     &__card
       display: flex
       flex-direction: column
-      width: 384px
+      flex-basis: 31%
       margin-bottom: 30px
 
       background: $color-white
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05)
       border-radius: 7px
+      overflow: hidden
+      text-decoration: none
     &__img
       width: 384px
       height: 250px
 
-      object-fit: cover
-      border-top-left-radius: 7px
-      border-top-right-radius: 7px
+      object-fit: cover     
     &__text
       padding: 20px 24px 35px
     &__heading
@@ -59,6 +59,7 @@
     &__info
       display: flex
       align-items: center
+      flex-wrap: wrap
     &__rating
       margin-right: 26px
       padding-left: 22px
@@ -79,29 +80,65 @@
     &__price
       margin-right: 10px
     &__category
-      display: flex
-      align-items: center
+      display: inline-block
       position: relative
       padding-left: 15px
+
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+      max-width: 150px
       &::before
         content: ""
 
         position: absolute
         left: 0
+        top: 13px
 
         width: 5px
         height: 5px
 
         background-color: $color-restaurants-price-category
 
-        border-radius: 50%
-
-
-
-
-
-    
+        border-radius: 50%    
 .input-search
   width: 300px
 
   background-image: url("../img/restaurants/search-icon.svg")
+.inner-page
+  .restaurants__title
+    margin-right: 30px
+  .restaurants__heading
+    justify-content: flex-start
+  .restaurants-cards
+    &__card
+      flex-basis: 32%
+    &__text
+      padding: 0 24px 30px
+    &__title
+      font-size: 24px
+      line-height: 32px
+      font-weight: normal
+    &__description-text
+      margin: 0
+      margin-bottom: 25px
+
+      font-size: 18px
+      line-height: 21px
+      color: $color-restaurants-price-category
+    &__price
+      font-size: 20px
+      line-height: 32px
+      font-weight: bold
+      color: $color-main-color
+  .button-primery-cart
+    margin-left: 0
+    margin-right: 32px
+
+    color: $color-white
+
+    background-color: $color-blue
+    border: 1px solid $color-blue
+  .button-text
+    margin-right: 5px
+    

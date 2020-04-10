@@ -1,0 +1,122 @@
+@media(max-width: 1360px)
+  .container
+    max-width: 960px
+  .promo
+    background-position: center right -300px
+    background-size: 750px
+  .restaurants-cards
+    &__rating
+      margin-right: 15px
+    &__category,
+    &__price
+      font-size: 14px
+
+@media(max-width: 992px)
+  .container
+    max-width: 750px
+  .promo
+    padding: 50px
+
+    background-size: 500px
+    background-position: center right -200px
+    &__text
+      max-width: 400px
+
+      font-size: 18px
+  .restaurants-cards
+    padding-bottom: 30px
+    &__card
+      flex-basis: 48%
+  .main-footer__link
+    font-size: 16px
+  .inner-page
+    & .restaurants-cards__card
+      flex-basis: 48%
+
+@media(max-width: 768px)
+  .container
+    max-width: 560px
+  .restaurants-cards__title
+    font-size: 18px
+  .promo
+    background-size: 400px
+    background-position: bottom 50px right -200px
+    &__title
+      margin-bottom: 10px
+      
+      font-size: 18px
+      line-height: 1.4
+
+@media(max-width: 578px)
+  .container
+    width: 90%
+  .header
+    flex-wrap: wrap
+  .input-address
+    flex: 1
+    margin-top: 15px
+
+    order: 5
+  .promo
+    background-image: none
+  .restaurants__title
+    font-size: 20px
+  .restaurants-cards
+    padding-bottom: 0
+    &__card
+      flex-basis: 100%
+    &__img
+      width: 100%
+  .main-footer
+    padding: 30px 0
+    &__flex
+      align-items: start
+    &__nav
+      margin-right: 15px
+
+      order: 0
+    &__social-links
+      order: 2  
+  .footer-logo
+    margin-right: 15px
+
+    order: 1
+  
+  .inner-page
+    & .restaurants-cards__card
+      flex-basis: 100%
+    
+@media(max-width: 480px)
+  .header
+    margin-bottom: 30px
+  .button-text
+    display: none
+  .promo
+    margin-bottom: 24px
+    padding: 20px
+  .restaurants__heading
+    flex-wrap: wrap
+    margin-bottom: 30px
+  .input-search
+    width: 100%
+  .restaurants-cards__text
+    padding-bottom: 25px
+  .main-footer
+    &__flex
+      flex-wrap: wrap
+      flex-direction: column
+      align-items: center
+    &__nav
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 0
+      margin-bottom: 20px
+    &__social-links
+      margin: 0
+    &__link
+      margin: 0
+  .footer-logo
+    margin-bottom: 20px
+
+    order: 0
