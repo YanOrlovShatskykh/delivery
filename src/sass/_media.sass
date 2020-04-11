@@ -85,6 +85,21 @@
   .inner-page
     & .restaurants-cards__card
       flex-basis: 100%
+
+  .modal
+    &__body
+      margin-bottom: 25px
+    &__dialog
+      padding: 20px 26px
+    &__title
+      font-size: 26px
+      line-height: 26px
+    &__close
+      font-size: 40px
+    &__food-name
+      font-size: 13px
+    &__food-price
+      font-size: 13px
     
 @media(max-width: 480px)
   .header
@@ -120,3 +135,40 @@
     margin-bottom: 20px
 
     order: 0
+  .modal
+    &__header
+      margin-bottom: 5px
+    &__food-name
+      line-height: 18px
+    &__food-price
+      margin-right: 10px
+    &__counter-button
+      min-width: 20px
+      padding: 1px 5px
+    &__counter
+      padding: 0 5px
+    &__footer
+      flex-wrap: wrap
+      justify-content: center
+    &__pricetag
+      width: 80%
+      margin-bottom: 10px
+
+      text-align: center
+    &__footer-buttons
+      width: 100%
+    & .button-primery
+      margin-left: 0
+      padding: 4px 8px
+      width: 50%
+
+      font-size: 12px
+      justify-content: center
+    & .button
+      width: 50%
+      padding: 4px 8px
+      margin-left: 10px
+
+      font-size: 12px
+      justify-content: center
+
